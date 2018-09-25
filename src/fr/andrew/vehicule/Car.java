@@ -2,25 +2,25 @@ package fr.andrew.vehicule;
 
 public class Car extends Vehicule {
 	
-	protected int nombreDePlaces;
+	private int nombreDePlaces;
 
 	public Car() {
 		super();
 		// TODO Auto-generated constructor stub
-	}
-
-	public Car(String marque, int vitesse, int puissance, double prix, double kilometrage) {
-		super(marque, vitesse, puissance, prix, kilometrage);
+	}	
+	public Car(String marque, String couleur, int vitesse, int puissance, double prix, double kilometrage, int nombreDePlaces) {
+		super(marque, couleur, vitesse, puissance, prix, kilometrage);
 		// TODO Auto-generated constructor stub
+		this.nombreDePlaces = nombreDePlaces;
 	}
 	
-	
+
 	//Getter & Setter
-	protected int getNombreDePlaces() {
+	public int getNombreDePlaces() {
 		return nombreDePlaces;
 	}
 
-	protected void setNombreDePlaces(int nombreDePlaces) {
+	public void setNombreDePlaces(int nombreDePlaces) {
 		this.nombreDePlaces = nombreDePlaces;
 	}
 

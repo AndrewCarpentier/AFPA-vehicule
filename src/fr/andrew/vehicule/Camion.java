@@ -2,24 +2,27 @@ package fr.andrew.vehicule;
 
 public class Camion extends Vehicule{
 	
-	protected int capacite;
+	private int capacite;
 
 	public Camion() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Camion(String marque, int vitesse, int puissance, double prix, double kilometrage) {
-		super(marque, vitesse, puissance, prix, kilometrage);
+	public Camion(String marque, String couleur, int vitesse, int puissance, double prix, double kilometrage, int capacite) {
+		super(marque, couleur, vitesse, puissance, prix, kilometrage);
 		// TODO Auto-generated constructor stub
+		this.capacite = capacite;
 	}
-	
+
+
+
 	//Getter & Setter
-	protected int getCapacite() {
+	public int getCapacite() {
 		return capacite;
 	}
 
-	protected void setCapacite(int capacite) {
+	public void setCapacite(int capacite) {
 		this.capacite = capacite;
 	}
 
